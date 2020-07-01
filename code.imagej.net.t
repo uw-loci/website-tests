@@ -33,6 +33,14 @@ Check site-specific redirects:
     <title>Index of /licenses</title>
    </head>
 
+  $ curl -Is https://code.imagej.net/jenkins | grep '^\(HTTP\|Location\)'
+  HTTP/1.1 301 Moved Permanently
+  Location: https://jenkins.imagej.net
+
+  $ curl -Is https://code.imagej.net/jenkins/foo | grep '^\(HTTP\|Location\)'
+  HTTP/1.1 301 Moved Permanently
+  Location: https://jenkins.imagej.net/foo
+
   $ curl -Is https://code.imagej.net/maps | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
   Location: https://imagej.net/Usage
