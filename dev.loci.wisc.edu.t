@@ -1,7 +1,7 @@
 Check IP address:
 
   $ host dev.loci.wisc.edu
-  dev.loci.wisc.edu has address 144.92.48.145
+  dev.loci.wisc.edu has address 144.92.48.134
 
 Check HTTP-to-HTTPS redirect:
 
