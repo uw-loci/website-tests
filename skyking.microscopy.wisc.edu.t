@@ -1,7 +1,7 @@
 Check IP address:
 
   $ host skyking.microscopy.wisc.edu
-  skyking.microscopy.wisc.edu has address 144.92.48.134
+  skyking.microscopy.wisc.edu has address 144.92.48.136
 
 Check HTTP-to-HTTPS redirect:
 
@@ -25,11 +25,11 @@ Check blanket redirect:
 
   $ curl -Is https://skyking.microscopy.wisc.edu/ | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://github.com/uw-loci
+  Location: https://imagej.net/Source_code
 
   $ curl -Is https://skyking.microscopy.wisc.edu/foo | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://github.com/uw-loci
+  Location: https://imagej.net/Source_code
 
 Check site-specific redirects:
 
