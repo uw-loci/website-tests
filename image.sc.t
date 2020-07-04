@@ -2,6 +2,8 @@ Check IP address:
 
   $ host image.sc
   image.sc has address 144.92.48.194
+  image.sc mail is handled by 10 mx1.improvmx.com.
+  image.sc mail is handled by 20 mx2.improvmx.com.
 
 Check HTTP-to-HTTPS redirect:
 
