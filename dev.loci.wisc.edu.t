@@ -42,10 +42,6 @@ Check site-specific redirects:
   HTTP/1.1 301 Moved Permanently
   Location: https://maven.scijava.org/foo
 
-  $ curl -Is https://dev.loci.wisc.edu/svn/software/trunk/components/bio-formats/doc/whats-new.txt | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://docs.openmicroscopy.org/bio-formats/latest/about/whats-new.html
-
 Check legacy redirects:
 
   $ curl -Is https://dev.loci.wisc.edu/pipermail/imagej-devel/foo | grep '^\(HTTP\|Location\)'
