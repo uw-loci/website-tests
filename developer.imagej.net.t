@@ -26,29 +26,21 @@ Check blanket redirect:
 
 Check site-specific redirects:
 
-  $ curl -Is https://developer.imagej.net/faq
+  $ curl -Is https://developer.imagej.net/faq | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
   Location: https://imagej.net/FAQ
 
-  $ curl -Is https://developer.imagej.net/faq/
+  $ curl -Is https://developer.imagej.net/faq/ | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
   Location: https://imagej.net/FAQ
 
-  $ curl -Is https://developer.imagej.net/roadmap
+  $ curl -Is https://developer.imagej.net/roadmap | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
   Location: https://imagej.net/Roadmap
 
-  $ curl -Is https://developer.imagej.net/roadmap/
+  $ curl -Is https://developer.imagej.net/roadmap/ | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
   Location: https://imagej.net/Roadmap
-
-  $ curl -Is https://developer.imagej.net/mailman/imagej-devel/listinfo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.net/mailman/imagej-devel/listinfo
-
-  $ curl -Is https://developer.imagej.net/pipermail/imagej-devel/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.net/pipermail/imagej-devel/foo
 
 Check legacy redirects:
 
