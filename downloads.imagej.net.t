@@ -14,11 +14,24 @@ Check hello access:
   $ curl -s https://downloads.imagej.net/hello
   downloads.imagej.net on devonrex
 
-Check directory index:
+Check top-level directory index:
 
-  $ curl -s https://downloads.imagej.net/ | head -n5
-  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
-  <html>
-   <head>
-    <title>Index of /</title>
-   </head>
+  $ curl -s https://downloads.imagej.net/ | grep '<a href' | sed 's/.*<a href="\([^"]*\)">.*/\1/' | LC_COLLATE=C sort
+  3dviewer/
+  ?C=D;O=A
+  ImageJ2-20160205.zip
+  MBF-ImageJ-20090120.zip
+  bootstrapJ8.js
+  fiji/
+  hello
+  ij-samples.zip
+  java/
+  knime/
+  openspim/
+  plugins/
+  presentations/
+  test/
+  ~aivar/
+  ~curtis/
+  ~gharris/
+  ~hinerm/
