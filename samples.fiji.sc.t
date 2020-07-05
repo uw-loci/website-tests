@@ -16,27 +16,28 @@ Check hello access:
 
 Check top-level directory index:
 
-  $ curl -s https://samples.fiji.sc/ | grep '<a href' | sed 's/.*<a href="\([^"]*\)">.*/\1/' | sort
+  $ curl -s https://samples.fiji.sc/ | grep '<a href' | sed 's/.*<a href="\([^"]*\)">.*/\1/' | LC_COLLATE=C sort
   12_9.tif
   150707_WTstack.lsm
   5602-01_4_568_633_x63_stack2_Channel_BLUE.tif
-  Al2O3-block.tif
-  blobs.png
   ?C=D;O=A
+  Al2O3-block.tif
   Celegans-5pc-17timepoints.tif
   Celegans-5pc-17timepoints.zip
-  colocsample1b.lsm
-  colocsample1bRGB_BG.tif
   FakeTracks.tif
-  first-instar-brain.zip
-  _malaria_parasites.tif
   MaMuT_TGMM_Parhyale_demo.xml
   MessedUpColoc.png
   MessedUpColoc.txt
+  Sintered_Alumina.tif.zip
+  _malaria_parasites.tif
+  blobs.png
+  colocsample1b.lsm
+  colocsample1bRGB_BG.tif
+  first-instar-brain.zip
+  hello
   new-lenna.jpg
   originals.zip
   sample2.lsm
-  Sintered_Alumina.tif.zip
   sio-test-images.zip
   sporo12crop-leftP.avi
   tutorials/
