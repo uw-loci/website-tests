@@ -24,7 +24,14 @@ Check blanket redirect:
   HTTP/1.1 301 Moved Permanently
   Location: https://github.com/imagej/imagej
 
-Check site-specific redirects:
+Check plain content:
+
+  $ curl -s https://code.imagej.net/irc-logs/ | head -n5
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+  <html>
+   <head>
+    <title>Index of /irc-logs</title>
+   </head>
 
   $ curl -s https://code.imagej.net/licenses/ | head -n5
   <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
@@ -32,6 +39,8 @@ Check site-specific redirects:
    <head>
     <title>Index of /licenses</title>
    </head>
+
+Check site-specific redirects:
 
   $ curl -Is https://code.imagej.net/jenkins | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
