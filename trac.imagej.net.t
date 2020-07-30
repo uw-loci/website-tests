@@ -5,13 +5,13 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://trac.imagej.net/hello | grep '^\(HTTP\|Location\)'
+  $ curl -Is http://trac.imagej.net/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://trac.imagej.net/hello
+  Location: https://trac.imagej.net/.hello
 
 Check hello access:
 
-  $ curl -s https://trac.imagej.net/hello
+  $ curl -s https://trac.imagej.net/.hello
   trac.imagej.net on devonrex
 
 Check redirects:

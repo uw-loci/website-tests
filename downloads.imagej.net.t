@@ -5,13 +5,13 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://downloads.imagej.net/hello | grep '^\(HTTP\|Location\)'
+  $ curl -Is http://downloads.imagej.net/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://downloads.imagej.net/hello
+  Location: https://downloads.imagej.net/.hello
 
 Check hello access:
 
-  $ curl -s https://downloads.imagej.net/hello
+  $ curl -s https://downloads.imagej.net/.hello
   downloads.imagej.net on devonrex
 
 Check top-level directory index:
@@ -23,7 +23,6 @@ Check top-level directory index:
   MBF-ImageJ-20090120.zip
   bootstrapJ8.js
   fiji/
-  hello
   ij-samples.zip
   java/
   knime/

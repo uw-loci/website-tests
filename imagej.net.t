@@ -10,13 +10,13 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://imagej.net/hello | grep '^\(HTTP\|Location\)'
+  $ curl -Is http://imagej.net/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.net/hello
+  Location: https://imagej.net/.hello
 
 Check hello access:
 
-  $ curl -s https://imagej.net/hello
+  $ curl -s https://imagej.net/.hello
   imagej.net on devonrex
 
 Check top-level redirect:

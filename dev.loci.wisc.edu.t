@@ -5,13 +5,13 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://dev.loci.wisc.edu/hello | grep '^\(HTTP\|Location\)'
+  $ curl -Is http://dev.loci.wisc.edu/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://dev.loci.wisc.edu/hello
+  Location: https://dev.loci.wisc.edu/.hello
 
 Check hello access:
 
-  $ curl -s https://dev.loci.wisc.edu/hello
+  $ curl -s https://dev.loci.wisc.edu/.hello
   dev.loci.wisc.edu on devonrex
 
 Check blanket redirect:

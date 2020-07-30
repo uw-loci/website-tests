@@ -5,13 +5,13 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://javadoc.scijava.org/hello | grep '^\(HTTP\|Location\)'
+  $ curl -Is http://javadoc.scijava.org/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://javadoc.scijava.org/hello
+  Location: https://javadoc.scijava.org/.hello
 
 Check hello access:
 
-  $ curl -s https://javadoc.scijava.org/hello
+  $ curl -s https://javadoc.scijava.org/.hello
   javadoc.scijava.org on devonrex
 
 Check access to proxied content:

@@ -6,13 +6,13 @@ Check IP address:
 # NB: wsr.imagej.net explicitly supports access over plain HTTP.
 #Check HTTP-to-HTTPS redirect:
 #
-#  $ curl -Is http://wsr.imagej.net/hello | grep '^\(HTTP\|Location\)'
+#  $ curl -Is http://wsr.imagej.net/.hello | grep '^\(HTTP\|Location\)'
 #  HTTP/1.1 301 Moved Permanently
-#  Location: https://wsr.imagej.net/hello
+#  Location: https://wsr.imagej.net/.hello
 
 Check hello access:
 
-  $ curl -s https://wsr.imagej.net/hello
+  $ curl -s https://wsr.imagej.net/.hello
   wsr.imagej.net on balinese
 
 Check top-level directory index:
@@ -26,7 +26,6 @@ Check top-level directory index:
   docs/
   download/
   googlec65b4e54c262cd1c.html
-  hello
   images/
   jars/
   macros/

@@ -5,16 +5,16 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://update.fiji.sc/hello | grep '^\(HTTP\|Location\)'
+  $ curl -Is http://update.fiji.sc/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://update.fiji.sc/hello
+  Location: https://update.fiji.sc/.hello
 
-  $ curl -s -A Java http://update.fiji.sc/hello
+  $ curl -s -A Java http://update.fiji.sc/.hello
   update.fiji.sc on balinese
 
 Check hello access:
 
-  $ curl -s https://update.fiji.sc/hello
+  $ curl -s https://update.fiji.sc/.hello
   update.fiji.sc on balinese
 
 Check top-level directory index:

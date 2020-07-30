@@ -5,16 +5,16 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://sites.imagej.net/hello | grep '^\(HTTP\|Location\)'
+  $ curl -Is http://sites.imagej.net/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://sites.imagej.net/hello
+  Location: https://sites.imagej.net/.hello
 
-  $ curl -s -A Java http://sites.imagej.net/hello
+  $ curl -s -A Java http://sites.imagej.net/.hello
   sites.imagej.net on balinese
 
 Check hello access:
 
-  $ curl -s https://sites.imagej.net/hello
+  $ curl -s https://sites.imagej.net/.hello
   sites.imagej.net on balinese
 
 Check top-level directory index:

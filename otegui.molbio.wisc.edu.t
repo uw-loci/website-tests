@@ -5,13 +5,13 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://otegui.molbio.wisc.edu/hello | grep '^\(HTTP\|Location\)'
+  $ curl -Is http://otegui.molbio.wisc.edu/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://otegui.molbio.wisc.edu/hello
+  Location: https://otegui.molbio.wisc.edu/.hello
 
 Check hello access:
 
-  $ curl -s https://otegui.molbio.wisc.edu/hello
+  $ curl -s https://otegui.molbio.wisc.edu/.hello
   otegui.molbio.wisc.edu on cheetoh
 
 Check blanket redirect:

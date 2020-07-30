@@ -5,13 +5,13 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://hinerm.imagej.net/hello | grep '^\(HTTP\|Location\)'
+  $ curl -Is http://hinerm.imagej.net/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://hinerm.imagej.net/hello
+  Location: https://hinerm.imagej.net/.hello
 
 Check hello access:
 
-  $ curl -s https://hinerm.imagej.net/hello
+  $ curl -s https://hinerm.imagej.net/.hello
   hinerm.imagej.net on devonrex
 
 Check blanket redirect:

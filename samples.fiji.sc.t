@@ -5,13 +5,13 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://samples.fiji.sc/hello | grep '^\(HTTP\|Location\)'
+  $ curl -Is http://samples.fiji.sc/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://samples.fiji.sc/hello
+  Location: https://samples.fiji.sc/.hello
 
 Check hello access:
 
-  $ curl -s https://samples.fiji.sc/hello
+  $ curl -s https://samples.fiji.sc/.hello
   samples.fiji.sc on devonrex
 
 Check top-level directory index:
@@ -34,7 +34,6 @@ Check top-level directory index:
   colocsample1b.lsm
   colocsample1bRGB_BG.tif
   first-instar-brain.zip
-  hello
   new-lenna.jpg
   originals.zip
   sample2.lsm

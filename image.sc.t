@@ -7,13 +7,13 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://image.sc/hello | grep '^\(HTTP\|Location\)'
+  $ curl -Is http://image.sc/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://image.sc/hello
+  Location: https://image.sc/.hello
 
 Check hello access:
 
-  $ curl -s https://image.sc/hello
+  $ curl -s https://image.sc/.hello
   image.sc on devonrex
 
 Check blanket redirect:

@@ -5,13 +5,13 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://aivar.imagej.net/hello | grep '^\(HTTP\|Location\)'
+  $ curl -Is http://aivar.imagej.net/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://aivar.imagej.net/hello
+  Location: https://aivar.imagej.net/.hello
 
 Check hello access:
 
-  $ curl -s https://aivar.imagej.net/hello
+  $ curl -s https://aivar.imagej.net/.hello
   aivar.imagej.net on devonrex
 
 Check blanket redirect:

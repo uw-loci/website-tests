@@ -5,13 +5,13 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://maven.imagej.net/hello | grep '^\(HTTP\|Location\)'
+  $ curl -Is http://maven.imagej.net/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://maven.imagej.net/hello
+  Location: https://maven.imagej.net/.hello
 
 Check hello access:
 
-  $ curl -s https://maven.imagej.net/hello
+  $ curl -s https://maven.imagej.net/.hello
   maven.imagej.net on balinese
 
 Check blanket redirect:

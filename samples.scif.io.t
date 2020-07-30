@@ -5,13 +5,13 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://samples.scif.io/hello | grep '^\(HTTP\|Location\)'
+  $ curl -Is http://samples.scif.io/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://samples.scif.io/hello
+  Location: https://samples.scif.io/.hello
 
 Check hello access:
 
-  $ curl -s https://samples.scif.io/hello
+  $ curl -s https://samples.scif.io/.hello
   samples.scif.io on devonrex
 
 Check toplevel redirect:

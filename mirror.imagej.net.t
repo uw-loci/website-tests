@@ -5,13 +5,13 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://mirror.imagej.net/hello | grep '^\(HTTP\|Location\)'
+  $ curl -Is http://mirror.imagej.net/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://mirror.imagej.net/hello
+  Location: https://mirror.imagej.net/.hello
 
 Check hello access:
 
-  $ curl -s https://mirror.imagej.net/hello
+  $ curl -s https://mirror.imagej.net/.hello
   mirror.imagej.net on devonrex
 
 Check top-level access:
