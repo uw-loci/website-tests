@@ -25,7 +25,6 @@ Check top-level directory index:
   distros/
   docs/
   download/
-  googlec65b4e54c262cd1c.html
   images/
   jars/
   macros/
