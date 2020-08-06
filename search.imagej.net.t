@@ -16,8 +16,8 @@ Check hello access:
 
 Check front page access:
 
-  $ curl -s https://search.imagej.net/ | grep '<title>'
-      <title>ImageJ Search</title>
+  $ curl -s https://search.imagej.net/ | grep '<title>' | xargs
+  <title>ImageJ Search</title>
 
   $ curl -Is https://search.imagej.net/.git/ | grep '^\(HTTP\|Location\)'
   HTTP/1.1 302 Found
