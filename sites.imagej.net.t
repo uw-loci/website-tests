@@ -29,5 +29,5 @@ Check top-level directory index:
 Check that there are enough update sites:
 
   $ numSites=$(curl -s https://sites.imagej.net/ | grep '<a href' | sed 's/.*<a href="\([^"]*\)">.*/\1/' | wc -l)
-  $ test "$numSites" -gt 700 && echo GOOD || echo "$numSites"
+  $ test "$numSites" -gt 450 && echo GOOD || echo "$numSites"
   GOOD
