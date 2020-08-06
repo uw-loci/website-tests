@@ -8,6 +8,12 @@ Check IP address:
   imagej.net mail is handled by 10 mx1.improvmx.com.
   imagej.net mail is handled by 20 mx2.improvmx.com.
 
+Check www redirect:
+
+  $ curl -Is http://www.imagej.net | grep '^\(HTTP\|Location\)'
+  HTTP/1.1 301 Moved Permanently
+  Location: http://imagej.net/
+
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://imagej.net/.hello | grep '^\(HTTP\|Location\)'
@@ -26,7 +32,7 @@ Check top-level redirect:
   Location: https://imagej.net/Welcome
 
   $ curl -s https://imagej.net/Welcome | grep '<title>' | xargs
-  <head><title>ImageJ</title></head>
+  <title>ImageJ</title>
 
 Check other special redirects:
 
@@ -46,16 +52,15 @@ Check other special redirects:
   HTTP/1.1 301 Moved Permanently
   Location: https://imagej.net/Usage
 
-Check temporary maintenance notice:
+Check redirects of old wiki links:
 
-  $ curl -s https://imagej.net/Foo | grep '<h1>' | xargs
-  <h1>Site under maintenance</h1>
+  $ curl -Is https://imagej.net/wiki/Foo | grep '^\(HTTP\|Location\)'
+  HTTP/1.1 301 Moved Permanently
+  Location: https://imagej.net/Foo
 
-  $ curl -s https://imagej.net/wiki/Foo | grep '<h1>' | xargs
-  <h1>Site under maintenance</h1>
-
-  $ curl -s https://imagej.net/mediawiki/phase3/Foo | grep '<h1>' | xargs
-  <h1>Site under maintenance</h1>
+  $ curl -Is https://imagej.net/mediawiki/phase3/Foo | grep '^\(HTTP\|Location\)'
+  HTTP/1.1 301 Moved Permanently
+  Location: https://imagej.net/Foo
 
 Check proxy content from ImageJ 1.x mirror:
 
