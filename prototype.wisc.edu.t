@@ -16,5 +16,5 @@ Check hello access:
 
 Check access to proxied content:
 
-  $ curl -s https://prototype.wisc.edu | grep '<title>' | head -n1
-      <title>UW Rapid Prototyping Consortium</title>
+  $ curl -s https://prototype.wisc.edu | grep '<title>' | head -n1 | xargs
+  <title>UW Rapid Prototyping Consortium</title>
