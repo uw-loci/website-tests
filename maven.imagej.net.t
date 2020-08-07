@@ -24,4 +24,18 @@ Check blanket redirect:
   HTTP/1.1 301 Moved Permanently
   Location: https://maven.scijava.org/foo
 
-TODO: Add tests for Ivy User-Agent.
+Check Ivy User-Agent (for Micro-Manager builds):
+
+  $ curl -s -A Ivy http://maven.imagej.net/ | grep '<title>' | xargs
+  <title>Nexus Repository Manager</title>
+
+  $ curl -Is -A Ivy http://maven.imagej.net/nexus/foo | grep '^\(HTTP\|Location\)'
+  HTTP/1.1 301 Moved Permanently
+  Location: http://maven.imagej.net/foo
+
+  $ curl -s -A Ivy https://maven.imagej.net/ | grep '<title>' | xargs
+  <title>Nexus Repository Manager</title>
+
+  $ curl -Is -A Ivy https://maven.imagej.net/nexus/foo | grep '^\(HTTP\|Location\)'
+  HTTP/1.1 301 Moved Permanently
+  Location: https://maven.imagej.net/foo
