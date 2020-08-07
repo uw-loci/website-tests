@@ -14,12 +14,20 @@ Check hello access:
   $ curl -s https://dietzc.imagej.net/.hello
   dietzc.imagej.net on devonrex
 
-Check blanket redirect:
+Check blanket redirects:
 
   $ curl -Is https://dietzc.imagej.net/ | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://downloads.imagej.net/~dietzc/
+  Location: https://downloads.imagej.net/knime/
 
   $ curl -Is https://dietzc.imagej.net/foo | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://downloads.imagej.net/~dietzc/foo
+  Location: https://downloads.imagej.net/knime/
+
+  $ curl -Is https://dietzc.imagej.net/knime/ | grep '^\(HTTP\|Location\)'
+  HTTP/1.1 301 Moved Permanently
+  Location: https://downloads.imagej.net/knime/
+
+  $ curl -Is https://dietzc.imagej.net/knime/foo | grep '^\(HTTP\|Location\)'
+  HTTP/1.1 301 Moved Permanently
+  Location: https://downloads.imagej.net/knime/foo

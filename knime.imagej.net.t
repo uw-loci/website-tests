@@ -18,8 +18,8 @@ Check blanket redirect:
 
   $ curl -Is https://knime.imagej.net/ | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://downloads.imagej.net/knime/
+  Location: https://imagej.net/KNIME
 
   $ curl -Is https://knime.imagej.net/foo | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://downloads.imagej.net/knime/foo
+  Location: https://imagej.net/KNIME
