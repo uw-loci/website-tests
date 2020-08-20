@@ -18,12 +18,12 @@ Check redirects:
 
   $ curl -Is https://trac.imagej.net/ | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/tickets/
+  Location: https://imagej.net/tickets/
 
   $ curl -Is https://trac.imagej.net/ticket/1234 | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/tickets/1234
+  Location: https://imagej.net/tickets/1234
 
   $ curl -Is https://trac.imagej.net/foo | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/tickets/
+  Location: https://imagej.net/tickets/

@@ -46,23 +46,23 @@ Check legacy redirects:
 
   $ curl -Is https://developer.imagej.net/pipermail/imagej-devel/foo | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/pipermail/imagej-devel/foo
+  Location: https://imagej.net/pipermail/imagej-devel/foo
 
   $ curl -Is https://developer.imagej.net/mailman/admin/imagej-devel | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/pipermail/imagej-devel
+  Location: https://imagej.net/pipermail/imagej-devel
 
   $ curl -Is https://developer.imagej.net/mailman/admin/imagej-devel/foo | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/pipermail/imagej-devel
+  Location: https://imagej.net/pipermail/imagej-devel
 
   $ curl -Is https://developer.imagej.net/mailman/listinfo/imagej-devel | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/pipermail/imagej-devel
+  Location: https://imagej.net/pipermail/imagej-devel
 
   $ curl -Is https://developer.imagej.net/mailman/listinfo/imagej-devel/foo | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/pipermail/imagej-devel
+  Location: https://imagej.net/pipermail/imagej-devel
 
   $ curl -Is https://developer.imagej.net/svn/decon | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
@@ -114,11 +114,11 @@ Check legacy redirects:
 
   $ curl -Is https://developer.imagej.net/trac/imagej/ticket/1234 | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/tickets/1234
+  Location: https://imagej.net/tickets/1234
 
   $ curl -Is https://developer.imagej.net/trac/imagej | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/tickets/
+  Location: https://imagej.net/tickets/
 
   $ curl -Is https://developer.imagej.net/trac/software/ticket/1234 | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently

@@ -38,7 +38,7 @@ Check other special redirects:
 
   $ curl -Is https://imagej.net/List_of_update_sites | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/list-of-update-sites/
+  Location: https://imagej.net/list-of-update-sites/
 
   $ curl -Is https://imagej.net/dokuwiki_migration | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
@@ -62,6 +62,40 @@ Check redirects of old wiki links:
   HTTP/1.1 301 Moved Permanently
   Location: https://imagej.net/Foo
 
+Check proxy content from GitHub Pages:
+
+  $ curl -Is https://imagej.net/conference | grep '^\(HTTP\|Location\)'
+  HTTP/1.1 301 Moved Permanently
+  Location: https://conference.imagej.net
+
+  $ curl -s https://imagej.net/list-of-update-sites/ | grep '<title>'
+  <title>List of update sites - ImageJ</title>
+
+  $ curl -s https://imagej.net/mbf/ | grep '<title>'
+  <title>MBF_ImageJ - Home</title>
+
+  $ curl -s https://imagej.net/pipermail/imagej-bugs/ | grep '<title>' | xargs
+  <title>The Imagej-bugs Archives</title>
+
+  $ curl -s https://imagej.net/pipermail/imagej-builds/ | grep '<title>' | xargs
+  <title>The ImageJ-builds Archives</title>
+
+  $ curl -s https://imagej.net/pipermail/imagej-devel/ | grep '<title>' | xargs
+  <title>The ImageJ-devel Archives</title>
+
+  $ curl -s https://imagej.net/presentations/ | grep '<title>' | xargs
+  <title>ImageJ Presentations</title>
+
+  $ curl -s https://imagej.net/tickets/ | grep -A2 '<title>' | xargs
+  <title> ImageJ Trac Ticket Archive </title>
+
+  $ curl -s https://imagej.net/tutorials/ | grep '<title>' | xargs
+  <title>ImageJ Tutorials</title>
+
+  $ curl -Is https://imagej.net/workshops | grep '^\(HTTP\|Location\)'
+  HTTP/1.1 301 Moved Permanently
+  Location: https://workshops.imagej.net
+
 Check proxy content from ImageJ 1.x mirror:
 
   $ curl -s https://imagej.net/index.html | grep -C2 '<title>'
@@ -76,25 +110,21 @@ Check proxy content from ImageJ 1.x mirror:
 
 Check legacy redirects:
 
-  $ curl -Is https://imagej.net/pipermail/imagej-devel/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/pipermail/imagej-devel/foo
-
   $ curl -Is https://imagej.net/mailman/admin/imagej-devel | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/pipermail/imagej-devel
+  Location: https://imagej.net/pipermail/imagej-devel
 
   $ curl -Is https://imagej.net/mailman/admin/imagej-devel/foo | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/pipermail/imagej-devel
+  Location: https://imagej.net/pipermail/imagej-devel
 
   $ curl -Is https://imagej.net/mailman/listinfo/imagej-devel | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/pipermail/imagej-devel
+  Location: https://imagej.net/pipermail/imagej-devel
 
   $ curl -Is https://imagej.net/mailman/listinfo/imagej-devel/foo | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/pipermail/imagej-devel
+  Location: https://imagej.net/pipermail/imagej-devel
 
   $ curl -Is https://imagej.net/svn/decon | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
@@ -146,11 +176,11 @@ Check legacy redirects:
 
   $ curl -Is https://imagej.net/trac/imagej/ticket/1234 | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/tickets/1234
+  Location: https://imagej.net/tickets/1234
 
   $ curl -Is https://imagej.net/trac/imagej | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/tickets/
+  Location: https://imagej.net/tickets/
 
   $ curl -Is https://imagej.net/trac/software/ticket/1234 | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently

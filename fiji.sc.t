@@ -158,4 +158,4 @@ Check redirects of old ops presentation links:
 
   $ curl -Is https://fiji.sc/ops | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.github.io/presentations/2015-01-12-imagej-ops
+  Location: https://imagej.net/presentations/2015-01-12-imagej-ops
