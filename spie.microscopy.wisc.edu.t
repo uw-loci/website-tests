@@ -18,8 +18,8 @@ Check blanket redirect:
 
   $ curl -Is https://spie.microscopy.wisc.edu/ | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://uwmadisonspieosa.org/
+  Location: https://spieosamadison.org/
 
   $ curl -Is https://spie.microscopy.wisc.edu/foo | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://uwmadisonspieosa.org/
+  Location: https://spieosamadison.org/
