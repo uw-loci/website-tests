@@ -124,7 +124,7 @@ Check job and view redirects:
 
   $ curl -Is https://jenkins.imagej.net/job/JEX | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://travis-ci.org/github/jaywarrick/JEX
+  Location: https://github.com/jaywarrick/JEX
 
   $ curl -Is https://jenkins.imagej.net/job/Java3D-javadoc | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
@@ -264,11 +264,11 @@ Check job and view redirects:
 
   $ curl -Is https://jenkins.imagej.net/job/slim-plotter | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://travis-ci.org/github/uw-loci/slim-plotter
+  Location: https://github.com/uw-loci/slim-plotter
 
   $ curl -Is https://jenkins.imagej.net/job/slim-plugin | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: https://travis-ci.com/github/flimlib/slim-plugin
+  Location: https://github.com/flimlib/slim-plugin
 
   $ curl -Is https://jenkins.imagej.net/job/visbio | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
