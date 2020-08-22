@@ -8,6 +8,9 @@ Check IP address:
   imagej.net mail is handled by 10 mx1.improvmx.com.
   imagej.net mail is handled by 20 mx2.improvmx.com.
 
+  $ host www.imagej.net
+  www.imagej.net has address 144.92.48.182
+
 Check www redirect:
 
   $ curl -Is http://www.imagej.net | grep '^\(HTTP\|Location\)'
