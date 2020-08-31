@@ -26,7 +26,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://imagej.net/.hello
-  imagej.net on devonrex
+  imagej.net on abyssinian
 
 Check top-level redirect:
 
