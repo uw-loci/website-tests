@@ -13,7 +13,7 @@ Check IP address:
 Check hello access:
 
   $ curl -s https://wsr.imagej.net/.hello
-  wsr.imagej.net on balinese
+  wsr.imagej.net on abyssinian
 
 Check top-level directory index:
 
