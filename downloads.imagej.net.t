@@ -34,3 +34,35 @@ Check top-level directory index:
   ~curtis/
   ~gharris/
   ~hinerm/
+
+Check Fiji archive links:
+
+  $ curl -s https://downloads.imagej.net/fiji/archive/ | grep '<a href' | sed 's/.*<a href="\([^"]*\)">.*/\1/' | LC_COLLATE=C sort | head
+  /fiji/
+  20191027-2045/
+  20191028-2046/
+  20191030-2047/
+  20191101-2048/
+  20191113-2054/
+  20191115-2055/
+  20191119-2057/
+  20191216-2110/
+  20200708-1553/
+
+  $ curl -s https://downloads.imagej.net/fiji/latest/ | grep '<a href' | sed 's/.*<a href="\([^"]*\)">.*/\1/' | LC_COLLATE=C sort
+  /fiji/
+  ?C=D;O=A
+  fiji-linux64.tar.gz
+  fiji-linux64.zip
+  fiji-macosx.tar.gz
+  fiji-macosx.zip
+  fiji-nojre.tar.gz
+  fiji-nojre.zip
+  fiji-win32.tar.gz
+  fiji-win32.zip
+  fiji-win64.tar.gz
+  fiji-win64.zip
+
+  $ curl -Is https://downloads.imagej.net/fiji/latest/fiji-win64.zip | grep '^\(HTTP\|Content-Type\)'
+  HTTP/1.1 200 OK
+  Content-Type: application/zip
