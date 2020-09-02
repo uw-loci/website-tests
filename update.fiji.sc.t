@@ -30,3 +30,8 @@ Check top-level directory index:
   ImageJ-linux64-20120111190019
   ImageJ-linux64-20120508230720
   ImageJ-linux64-20120509185036
+
+Check public rsync access:
+
+  $ rsync update.fiji.sc:: | grep update.fiji.sc | xargs
+  update.fiji.sc Fiji update site

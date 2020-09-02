@@ -30,3 +30,8 @@ Check top-level directory index:
   ImageJ-linux32-20120802184529
   ImageJ-linux32-20120814181314
   ImageJ-linux32-20120912153445
+
+Check public rsync access:
+
+  $ rsync update.imagej.net:: | grep update.imagej.net | xargs
+  update.imagej.net ImageJ update site

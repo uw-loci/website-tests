@@ -66,3 +66,8 @@ Check Fiji archive links:
   $ curl -Is https://downloads.imagej.net/fiji/latest/fiji-win64.zip | grep '^\(HTTP\|Content-Type\)'
   HTTP/1.1 200 OK
   Content-Type: application/zip
+
+Check public rsync access:
+
+  $ rsync downloads.imagej.net:: | grep downloads.imagej.net | xargs
+  downloads.imagej.net ImageJ downloads

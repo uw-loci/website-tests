@@ -31,3 +31,8 @@ Check that there are enough update sites:
   $ numSites=$(curl -s https://sites.imagej.net/ | grep '<a href' | sed 's/.*<a href="\([^"]*\)">.*/\1/' | wc -l)
   $ test "$numSites" -gt 450 && echo GOOD || echo "$numSites"
   GOOD
+
+Check public rsync access:
+
+  $ rsync sites.imagej.net:: | grep sites.imagej.net | xargs
+  sites.imagej.net ImageJ update sites
