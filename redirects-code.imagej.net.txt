@@ -1,0 +1,10 @@
+/jenkins https://jenkins.imagej.net
+/jenkins/foo https://jenkins.imagej.net/foo
+/maps https://imagej.net/Usage
+/maps/foo https://imagej.net/Usage
+/maven2 https://maven.scijava.org
+/maven2/foo https://maven.scijava.org/foo
+/slim-curve https://flimlib.github.io/
+/slim-curve/foo https://flimlib.github.io/
+/status https://status.scijava.org/
+/status/foo https://status.scijava.org/

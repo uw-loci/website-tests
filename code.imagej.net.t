@@ -42,45 +42,8 @@ Check plain content:
 
 Check site-specific redirects:
 
-  $ curl -Is https://code.imagej.net/jenkins | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://jenkins.imagej.net
-
-  $ curl -Is https://code.imagej.net/jenkins/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://jenkins.imagej.net/foo
-
-  $ curl -Is https://code.imagej.net/maps | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.net/Usage
-
-  $ curl -Is https://code.imagej.net/maps/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.net/Usage
-
-  $ curl -Is https://code.imagej.net/maven2 | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://maven.scijava.org
-
-  $ curl -Is https://code.imagej.net/maven2/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://maven.scijava.org/foo
-
-  $ curl -Is https://code.imagej.net/slim-curve | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://flimlib.github.io/
-
-  $ curl -Is https://code.imagej.net/slim-curve/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://flimlib.github.io/
-
-  $ curl -Is https://code.imagej.net/status | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://status.scijava.org/
-
-  $ curl -Is https://code.imagej.net/status/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://status.scijava.org/
+  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-code.imagej.net.txt" code.imagej.net
+  DONE
 
 Check legacy redirects:
 
