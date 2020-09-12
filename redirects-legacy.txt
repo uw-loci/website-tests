@@ -1,8 +1,15 @@
 /mailman/admin/imagej-devel https://imagej.net/pipermail/imagej-devel
 /mailman/admin/imagej-devel/foo https://imagej.net/pipermail/imagej-devel
+/mailman/admin/slim-curve https://flimlib.github.io/pipermail/slim-curve
+/mailman/admin/slim-curve/foo https://flimlib.github.io/pipermail/slim-curve
 /mailman/listinfo/imagej-devel https://imagej.net/pipermail/imagej-devel
 /mailman/listinfo/imagej-devel/foo https://imagej.net/pipermail/imagej-devel
+/mailman/listinfo/slim-curve https://flimlib.github.io/pipermail/slim-curve
+/mailman/listinfo/slim-curve/foo https://flimlib.github.io/pipermail/slim-curve
+/pipermail/imagej-devel https://imagej.net/pipermail/imagej-devel
 /pipermail/imagej-devel/foo https://imagej.net/pipermail/imagej-devel/foo
+/pipermail/slim-curve https://flimlib.github.io/pipermail/slim-curve
+/pipermail/slim-curve/foo https://flimlib.github.io/pipermail/slim-curve/foo
 /svn/WiscScan https://github.com/uw-loci/wiscscan
 /svn/WiscScan/foo https://github.com/uw-loci/wiscscan
 /svn/decon https://github.com/uw-loci/opencl-decon
