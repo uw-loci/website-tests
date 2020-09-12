@@ -39,6 +39,11 @@ Check blanket redirect:
   HTTP/1.1 302 Found
   Location: https://eliceirilab.org/
 
+Check site-specific legacy redirects:
+
+  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-loci.txt" loci.wisc.edu
+  DONE
+
 Check legacy redirects:
 
   $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-legacy.txt" loci.wisc.edu
