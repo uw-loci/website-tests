@@ -9,6 +9,15 @@ Check IP address:
   loci.wisc.edu mail is handled by 10 mta5.wiscmail.wisc.edu.
   loci.wisc.edu mail is handled by 5 smtp.wiscmail.wisc.edu.
 
+  $ host www.loci.wisc.edu
+  www.loci.wisc.edu has address 144.92.48.134
+
+Check www redirect:
+
+  $ curl -Is http://www.loci.wisc.edu | grep '^\(HTTP\|Location\)'
+  HTTP/1.1 301 Moved Permanently
+  Location: http://loci.wisc.edu/
+
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://loci.wisc.edu/.hello | grep '^\(HTTP\|Location\)'
