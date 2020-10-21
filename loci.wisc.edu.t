@@ -16,7 +16,7 @@ Check www redirect:
 
   $ curl -Is http://www.loci.wisc.edu | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
-  Location: http://loci.wisc.edu/
+  Location: https://loci.wisc.edu/
 
 Check HTTP-to-HTTPS redirect:
 
@@ -32,12 +32,12 @@ Check hello access:
 Check blanket redirect:
 
   $ curl -Is https://loci.wisc.edu/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 302 Found
-  Location: https://eliceirilab.org/
+  HTTP/1.1 301 Moved Permanently
+  Location: https://eliceirilab.org
 
   $ curl -Is https://loci.wisc.edu/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 302 Found
-  Location: https://eliceirilab.org/
+  HTTP/1.1 301 Moved Permanently
+  Location: https://eliceirilab.org
 
 Check site-specific legacy redirects:
 
