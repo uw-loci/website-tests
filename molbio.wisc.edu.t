@@ -24,7 +24,17 @@ Check hello access:
   $ curl -s https://molbio.wisc.edu/.hello
   molbio.wisc.edu on devonrex
 
-Check site content:
+Check blanket redirect:
 
-  $ curl -s https://molbio.wisc.edu/ | grep '<title>' | xargs
-  <title>Home | Laboratory of Cell &amp; Molecular Biology</title>
+  $ curl -Is https://molbio.wisc.edu/ | grep '^\(HTTP\|Location\)'
+  HTTP/1.1 301 Moved Permanently
+  Location: https://cellimaging.wisc.edu
+
+  $ curl -Is https://molbio.wisc.edu/foo | grep '^\(HTTP\|Location\)'
+  HTTP/1.1 301 Moved Permanently
+  Location: https://cellimaging.wisc.edu
+
+  $ curl -Is https://molbio.wisc.edu/job/foo | grep '^\(HTTP\|Location\)'
+  HTTP/1.1 301 Moved Permanently
+  Location: https://cellimaging.wisc.edu
+
