@@ -6,7 +6,11 @@ do
   test "$line" = "${line#\#}" || continue
   old=${line% *}
   new=${line#* }
-  result=$(curl -Is "https://$domain$old" | grep '^Location: ' | sed 's/^Location: //' | tr -d '\r')
-  test "$result" = "$new" || echo "[FAIL] $old -> $result != $new"
+  response=$(curl -Is "https://$domain$old")
+  result=$(echo "$response" | grep '^Location: ' | sed 's/^Location: //' | tr -d '\r')
+  test "$result" = "$new" || {
+    echo "[FAIL] '$old' -> '$result' != '$new'"
+    echo "$response"
+  }
 done
 echo DONE
