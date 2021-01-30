@@ -14,16 +14,6 @@ Check hello access:
   $ curl -s https://code.imagej.net/.hello
   code.imagej.net on devonrex
 
-Check blanket redirect:
-
-  $ curl -Is https://code.imagej.net/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://github.com/imagej/imagej
-
-  $ curl -Is https://code.imagej.net/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://github.com/imagej/imagej
-
 Check plain content:
 
   $ curl -s https://code.imagej.net/irc-logs/ | head -n5
@@ -42,7 +32,7 @@ Check plain content:
 
 Check site-specific redirects:
 
-  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-code.imagej.net.txt" code.imagej.net
+  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-code.imagej.net.txt"
   DONE
 
 Check legacy redirects:

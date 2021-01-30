@@ -1,9 +1,13 @@
 #!/bin/sh
 file=$1
 domain=$2
+test "$domain" || {
+  domain=${file%.txt}
+  domain=${domain#redirects-}
+}
 cat "$file" | while read line
 do
-  test "$line" = "${line#\#}" || continue
+  test "$line" = "${line#\#}" -a "$line" || continue
   old=${line% *}
   new=${line#* }
   response=$(curl -Is "https://$domain$old")

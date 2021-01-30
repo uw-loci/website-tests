@@ -1,3 +1,5 @@
+/ https://github.com/imagej/imagej
+/foo https://github.com/imagej/imagej
 /jenkins https://jenkins.imagej.net
 /jenkins/foo https://jenkins.imagej.net/foo
 /maps https://imagej.net/Usage

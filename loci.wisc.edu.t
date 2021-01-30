@@ -29,19 +29,9 @@ Check hello access:
   $ curl -s https://loci.wisc.edu/.hello
   loci.wisc.edu on devonrex
 
-Check blanket redirect:
+Check site-specific redirects:
 
-  $ curl -Is https://loci.wisc.edu/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://eliceirilab.org
-
-  $ curl -Is https://loci.wisc.edu/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://eliceirilab.org
-
-Check site-specific legacy redirects:
-
-  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-loci.txt" loci.wisc.edu
+  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-loci.wisc.edu.txt"
   DONE
 
 Check legacy redirects:

@@ -1,0 +1,6 @@
+/ https://eliceirilab.org/software
+/foo https://eliceirilab.org/software
+/jenkins https://jenkins.imagej.net
+/jenkins/foo https://jenkins.imagej.net/foo
+/maven2 https://maven.scijava.org
+/maven2/foo https://maven.scijava.org/foo

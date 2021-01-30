@@ -14,20 +14,7 @@ Check hello access:
   $ curl -s https://dietzc.imagej.net/.hello
   dietzc.imagej.net on devonrex
 
-Check blanket redirects:
+Check site-specific redirects:
 
-  $ curl -Is https://dietzc.imagej.net/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://downloads.imagej.net/knime/
-
-  $ curl -Is https://dietzc.imagej.net/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://downloads.imagej.net/knime/
-
-  $ curl -Is https://dietzc.imagej.net/knime/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://downloads.imagej.net/knime/
-
-  $ curl -Is https://dietzc.imagej.net/knime/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://downloads.imagej.net/knime/foo
+  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-dietzc.imagej.net.txt"
+  DONE

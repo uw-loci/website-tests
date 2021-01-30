@@ -1,3 +1,5 @@
+/ https://eliceirilab.org
+/foo https://eliceirilab.org
 /4d-microscopy https://eliceirilab.org
 /4d/java/ViewerApplet/SampleDataSet/ https://eliceirilab.org
 /4dtest/4DWP_Test_Data/Biorad_Data/ https://eliceirilab.org

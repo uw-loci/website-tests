@@ -1,0 +1,36 @@
+# old BugZilla links
+/bugzilla/show_bug.cgi?id=123 https://fiji.sc/bug/123?id=123
+/cgi-bin/bugzilla/show_bug.cgi?id=321 https://fiji.sc/bug/321?id=321
+/bugzilla/456 https://fiji.sc/bug/456
+/cgi-bin/bugzilla/654 https://fiji.sc/bug/654
+
+# old update site links
+/update https://update.fiji.sc
+/update/foo https://update.fiji.sc/foo
+
+# old wiki links
+/Fiji https://fiji.sc/
+/wiki/index.php/Fiji https://fiji.sc/Fiji
+/wiki/index.php/Foo https://fiji.sc/Foo
+/mediawiki/phase3/Bar https://fiji.sc/Bar
+
+# old download links
+/downloads https://imagej.net/Fiji/Downloads
+/Downloads https://imagej.net/Fiji/Downloads
+
+# old samples links
+/samples/bling https://samples.fiji.sc/bling
+
+# blanket redirect of wiki content
+/My_Awesome_Plugin https://imagej.net/My_Awesome_Plugin
+
+# old javadoc links
+/javadoc/overview-summary.html https://javadoc.scijava.org/Fiji/overview-summary.html
+
+# old gitweb links
+/git/imagej.git https://git.imagej.net/git/imagej.git
+/imagej.git https://git.imagej.net/imagej.git
+/cgi-bin/gitweb.cgi?imagej.git https://git.imagej.net/git/?imagej.git
+
+# old ops presentation links
+/ops https://imagej.net/presentations/2015-01-12-imagej-ops

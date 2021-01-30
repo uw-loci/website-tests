@@ -1,0 +1,6 @@
+/ https://imagej.net/Development
+/foo https://imagej.net/Development
+/faq https://imagej.net/FAQ
+/faq/ https://imagej.net/FAQ
+/roadmap https://imagej.net/Roadmap
+/roadmap/ https://imagej.net/Roadmap

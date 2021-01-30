@@ -14,33 +14,10 @@ Check hello access:
   $ curl -s https://dev.loci.wisc.edu/.hello
   dev.loci.wisc.edu on devonrex
 
-Check blanket redirect:
-
-  $ curl -Is https://dev.loci.wisc.edu/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://eliceirilab.org/software
-
-  $ curl -Is https://dev.loci.wisc.edu/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://eliceirilab.org/software
-
 Check site-specific redirects:
 
-  $ curl -Is https://dev.loci.wisc.edu/jenkins | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://jenkins.imagej.net
-
-  $ curl -Is https://dev.loci.wisc.edu/jenkins/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://jenkins.imagej.net/foo
-
-  $ curl -Is https://dev.loci.wisc.edu/maven2 | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://maven.scijava.org
-
-  $ curl -Is https://dev.loci.wisc.edu/maven2/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://maven.scijava.org/foo
+  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-dev.loci.wisc.edu.txt"
+  DONE
 
 Check legacy redirects:
 

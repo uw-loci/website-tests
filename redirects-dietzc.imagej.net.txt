@@ -1,0 +1,4 @@
+/ https://downloads.imagej.net/knime/
+/foo https://downloads.imagej.net/knime/
+/knime/ https://downloads.imagej.net/knime/
+/knime/foo https://downloads.imagej.net/knime/foo

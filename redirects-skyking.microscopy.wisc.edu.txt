@@ -1,0 +1,4 @@
+/ https://imagej.net/Source_code
+/foo https://imagej.net/Source_code
+/curtis https://downloads.imagej.net/~curtis
+/curtis/foo https://downloads.imagej.net/~curtis/foo
