@@ -27,14 +27,17 @@ do
   test "$line" = "${line#\#}" -a "$line" || continue
   old=${line% *}
   new=${line#* }
-  test "$verbose" && echo "[$old -> $new]" && echo "$ curl -Is 'https://$domain$old'"
+  test "$verbose" && echo "[$old -> $new]"
+  url="https://$domain$old"
+  test "$url" = "$new" && { test "$verbose" && echo "[SKIPPED]\n"; continue; }
+  test "$verbose" && echo "$ curl -Is 'https://$domain$old'"
   response=$(curl -Is "https://$domain$old")
   test "$verbose" && echo "$response" | sed '/^\s*$/d'
   result=$(echo "$response" | grep '^Location: ' | sed 's/^Location: //' | tr -d '\r')
   test "$verbose" -a "$result" = "$new" && echo "[SUCCESS]\n"
   test "$result" = "$new" || {
     echo "[FAIL] '$old' -> '$result' != '$new'"
-    echo "$response"
+    test "$verbose" && echo || echo "$response"
   }
 done
 echo DONE
