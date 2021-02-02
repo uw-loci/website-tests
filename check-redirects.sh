@@ -34,6 +34,7 @@ do
   response=$(curl -Is "https://$domain$old")
   test "$verbose" && echo "$response" | sed '/^\s*$/d'
   result=$(echo "$response" | grep '^Location: ' | sed 's/^Location: //' | tr -d '\r')
+  test "$result" || result=$(echo "$response" | grep '^HTTP/' | sed 's/^HTTP\/[0-9\.]* *//' | tr -d '\r')
   test "$verbose" -a "$result" = "$new" && echo "[SUCCESS]\n"
   test "$result" = "$new" || {
     echo "[FAIL] '$old' -> '$result' != '$new'"
