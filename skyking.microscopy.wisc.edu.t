@@ -23,10 +23,10 @@ Check loci-logo.png access:
 
 Check site-specific redirects:
 
-  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-skyking.microscopy.wisc.edu.txt" skyking.microscopy.wisc.edu
+  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-skyking.microscopy.wisc.edu.txt"
   DONE
 
 Check legacy redirects:
 
-  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-legacy.txt" skyking.microscopy.wisc.edu
+  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-legacy.txt" -d skyking.microscopy.wisc.edu
   DONE

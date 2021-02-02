@@ -113,6 +113,6 @@ Check proxy content from ImageJ 1.x mirror:
 
 Check legacy redirects:
 
-  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-legacy.txt" imagej.net
+  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-legacy.txt" -d imagej.net
   [FAIL] /pipermail/imagej-devel/foo ->  != https://imagej.net/pipermail/imagej-devel/foo
   DONE

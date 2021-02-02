@@ -36,5 +36,5 @@ Check site-specific redirects:
 
 Check legacy redirects:
 
-  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-legacy.txt" loci.wisc.edu
+  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-legacy.txt" -d loci.wisc.edu
   DONE

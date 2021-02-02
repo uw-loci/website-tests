@@ -37,5 +37,5 @@ Check site-specific redirects:
 
 Check legacy redirects:
 
-  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-legacy.txt" code.imagej.net
+  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-legacy.txt" -d code.imagej.net
   DONE
