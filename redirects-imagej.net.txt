@@ -1,0 +1,3 @@
+/pipermail/imagej-bugs https://imagej.github.io/pipermail/imagej-bugs
+/pipermail/imagej-builds https://imagej.github.io/pipermail/imagej-builds
+/pipermail/imagej-devel https://imagej.github.io/pipermail/imagej-devel

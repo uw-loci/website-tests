@@ -77,15 +77,6 @@ Check proxy content from GitHub Pages:
   $ curl -s https://imagej.net/mbf/ | grep '<title>'
   <title>MBF_ImageJ - Home</title>
 
-  $ curl -s https://imagej.net/pipermail/imagej-bugs/ | grep '<title>' | xargs
-  <title>The Imagej-bugs Archives</title>
-
-  $ curl -s https://imagej.net/pipermail/imagej-builds/ | grep '<title>' | xargs
-  <title>The ImageJ-builds Archives</title>
-
-  $ curl -s https://imagej.net/pipermail/imagej-devel/ | grep '<title>' | xargs
-  <title>The ImageJ-devel Archives</title>
-
   $ curl -s https://imagej.net/presentations/ | grep '<title>' | xargs
   <title>ImageJ Presentations</title>
 
@@ -111,8 +102,23 @@ Check proxy content from ImageJ 1.x mirror:
   $ curl -s https://imagej.net/developer/macro/functions.html | grep '<title>'
   <title>Built-in Macro Functions</title>
 
+Check GitHub Pages content:
+
+  $ curl -s https://imagej.github.io/pipermail/imagej-bugs/ | grep '<title>' | xargs
+  <title>The Imagej-bugs Archives</title>
+
+  $ curl -s https://imagej.github.io/pipermail/imagej-builds/ | grep '<title>' | xargs
+  <title>The ImageJ-builds Archives</title>
+
+  $ curl -s https://imagej.github.io/pipermail/imagej-devel/ | grep '<title>' | xargs
+  <title>The ImageJ-devel Archives</title>
+
+Check site-specific redirects:
+
+  $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-imagej.net.txt"
+  DONE
+
 Check legacy redirects:
 
   $ "$TESTDIR/check-redirects.sh" "$TESTDIR/redirects-legacy.txt" -d imagej.net
-  [FAIL] /pipermail/imagej-devel/foo ->  != https://imagej.net/pipermail/imagej-devel/foo
   DONE
