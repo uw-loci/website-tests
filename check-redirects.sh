@@ -15,7 +15,7 @@ done
 
 test "$domain" || {
   domain=${file%.txt}
-  domain=${domain##*/redirects-}
+  domain=${domain##*redirects-}
 }
 
 test -e "$file" || { echo "No such redirects file: $file"; exit 1; }
