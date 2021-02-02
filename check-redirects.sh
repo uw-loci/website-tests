@@ -20,13 +20,18 @@ test "$domain" || {
 
 test -e "$file" || { echo "No such redirects file: $file"; exit 1; }
 
+test "$verbose" && echo "\nTesting '$file' with domain $domain\n"
+
 cat "$file" | while read line
 do
   test "$line" = "${line#\#}" -a "$line" || continue
   old=${line% *}
   new=${line#* }
+  test "$verbose" && echo "[$old -> $new]" && echo "$ curl -Is 'https://$domain$old'"
   response=$(curl -Is "https://$domain$old")
+  test "$verbose" && echo "$response" | sed '/^\s*$/d'
   result=$(echo "$response" | grep '^Location: ' | sed 's/^Location: //' | tr -d '\r')
+  test "$verbose" -a "$result" = "$new" && echo "[SUCCESS]\n"
   test "$result" = "$new" || {
     echo "[FAIL] '$old' -> '$result' != '$new'"
     echo "$response"
