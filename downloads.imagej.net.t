@@ -69,5 +69,5 @@ Check Fiji archive links:
 
 Check public rsync access:
 
-  $ rsync downloads.imagej.net:: | grep downloads.imagej.net | xargs
+  $ "$TESTDIR/try-again.sh" rsync downloads.imagej.net:: | grep downloads.imagej.net | xargs
   downloads.imagej.net ImageJ downloads
