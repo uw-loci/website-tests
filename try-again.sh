@@ -24,5 +24,5 @@ done
 stderr=$(cat "$errlog")
 rm -f "$errlog"
 test "$stderr" && >&2 echo "$stderr"
-echo "$result"
+test "$result" && echo "$result"
 exit $code
