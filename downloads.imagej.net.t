@@ -5,18 +5,18 @@ Check IP address:
 
 Check HTTP-to-HTTPS redirect:
 
-  $ curl -Is http://downloads.imagej.net/.hello | grep '^\(HTTP\|Location\)'
+  $ "$TESTDIR/try-again.sh" curl -Is http://downloads.imagej.net/.hello | grep '^\(HTTP\|Location\)'
   HTTP/1.1 301 Moved Permanently
   Location: https://downloads.imagej.net/.hello
 
 Check hello access:
 
-  $ curl -s https://downloads.imagej.net/.hello
+  $ "$TESTDIR/try-again.sh" curl -s https://downloads.imagej.net/.hello
   downloads.imagej.net on egyptianmau
 
 Check top-level directory index:
 
-  $ curl -s https://downloads.imagej.net/ | grep '<a href' | sed 's/.*<a href="\([^"]*\)">.*/\1/' | LC_COLLATE=C sort
+  $ "$TESTDIR/try-again.sh" curl -s https://downloads.imagej.net/ | grep '<a href' | sed 's/.*<a href="\([^"]*\)">.*/\1/' | LC_COLLATE=C sort
   3dviewer/
   ?C=D;O=A
   ImageJ2-20160205.zip
@@ -37,7 +37,7 @@ Check top-level directory index:
 
 Check Fiji archive links:
 
-  $ curl -s https://downloads.imagej.net/fiji/archive/ | grep '<a href' | sed 's/.*<a href="\([^"]*\)">.*/\1/' | LC_COLLATE=C sort | head
+  $ "$TESTDIR/try-again.sh" curl -s https://downloads.imagej.net/fiji/archive/ | grep '<a href' | sed 's/.*<a href="\([^"]*\)">.*/\1/' | LC_COLLATE=C sort | head
   /fiji/
   20191027-2045/
   20191028-2046/
@@ -49,7 +49,7 @@ Check Fiji archive links:
   20191216-2110/
   20200708-1553/
 
-  $ curl -s https://downloads.imagej.net/fiji/latest/ | grep '<a href' | sed 's/.*<a href="\([^"]*\)">.*/\1/' | LC_COLLATE=C sort
+  $ "$TESTDIR/try-again.sh" curl -s https://downloads.imagej.net/fiji/latest/ | grep '<a href' | sed 's/.*<a href="\([^"]*\)">.*/\1/' | LC_COLLATE=C sort
   /fiji/
   ?C=D;O=A
   fiji-linux64.tar.gz
@@ -63,7 +63,7 @@ Check Fiji archive links:
   fiji-win64.tar.gz
   fiji-win64.zip
 
-  $ curl -Is https://downloads.imagej.net/fiji/latest/fiji-win64.zip | grep '^\(HTTP\|Content-Type\)'
+  $ "$TESTDIR/try-again.sh" curl -Is https://downloads.imagej.net/fiji/latest/fiji-win64.zip | grep '^\(HTTP\|Content-Type\)'
   HTTP/1.1 200 OK
   Content-Type: application/zip
 
