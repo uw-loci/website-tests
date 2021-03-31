@@ -24,12 +24,12 @@ Check hello access:
 
 Check front page:
 
-  $ curl -s https://fiji.sc/ | grep '<title>' | xargs
+  $ curl -Ns https://fiji.sc/ | grep '<title>' | xargs
   <title>Fiji: ImageJ, with Batteries Included</title>
 
 Check GitHub Pages content:
 
-  $ curl -s https://fiji.sc/css/global.css | head -n3
+  $ curl -Ns https://fiji.sc/css/global.css | head -n3
   /* This Source Code Form is subject to the terms of the Mozilla Public
    * License, v. 2.0. If a copy of the MPL was not distributed with this
    * file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -39,7 +39,7 @@ Check GitHub Pages content:
   $ test "$expected" = "$actual" && echo MATCH || echo "$expected != $actual"
   MATCH
 
-  $ curl -s https://fiji.sc/site/css/style.css | head -n4
+  $ curl -Ns https://fiji.sc/site/css/style.css | head -n4
   body {
     padding-top: 70px;
     padding-bottom: 30px;
@@ -52,13 +52,13 @@ Check GitHub Pages content:
 
 Check static Fiji BugZilla content:
 
-  $ curl -s https://fiji.sc/bug/ | grep '<title>' | xargs
+  $ curl -Ns https://fiji.sc/bug/ | grep '<title>' | xargs
   <title>Bug List</title>
 
-  $ curl -s https://fiji.sc/bug/1265 | grep '<title>' | xargs
+  $ curl -Ns https://fiji.sc/bug/1265 | grep '<title>' | xargs
   <title>Bug 1265 &ndash; Cell Counter Hates Me</title>
 
-  $ curl -s https://fiji.sc/attach/100/Exception.txt | head -n1
+  $ curl -Ns https://fiji.sc/attach/100/Exception.txt | head -n1
   Fiji/ImageJ 1.47o; Java 1.6.0_24 [64-bit]; Windows 7 6.1; 29MB of 2945MB (<1%)
 
 Check proxying of old samples links over plain HTTP from Java:
