@@ -33,6 +33,7 @@ Check top-level directory index:
   blobs.png
   colocsample1b.lsm
   colocsample1bRGB_BG.tif
+  first-instar-brain.txt
   first-instar-brain.zip
   new-lenna.jpg
   originals.zip

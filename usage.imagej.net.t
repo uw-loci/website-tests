@@ -1,7 +1,7 @@
 Check IP address:
 
   $ host usage.imagej.net
-  usage.imagej.net has address 144.92.48.189
+  usage.imagej.net has address 144.92.48.185
 
 Check HTTP-to-HTTPS redirect:
 
@@ -12,14 +12,9 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://usage.imagej.net/.hello
-  usage.imagej.net on devonrex
+  usage.imagej.net on cheetoh
 
-Check blanket redirect:
+Check front page:
 
-  $ curl -Is https://usage.imagej.net/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.net/Usage
-
-  $ curl -Is https://usage.imagej.net/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.net/Usage
+  $ curl -s https://usage.imagej.net/ | grep '<title>' | xargs
+  <title>ImageJ Usage Statistics</title>
