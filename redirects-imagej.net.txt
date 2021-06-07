@@ -1,3 +1,60 @@
-/pipermail/imagej-bugs https://imagej.github.io/pipermail/imagej-bugs
-/pipermail/imagej-builds https://imagej.github.io/pipermail/imagej-builds
-/pipermail/imagej-devel https://imagej.github.io/pipermail/imagej-devel
+# Old MediaWiki links (just a few; there are too many to test them all)
+/2009-03-12_-_Dresden_Hackathon_2009 https://imagej.net/news/2009-03-12-dresden-hackathon-2009
+/3D_Viewer:_4D_Viewer https://imagej.net/plugins/3d-viewer/4d-viewer
+/Category:Segmentation https://imagej.net/list-of-extensions
+/Category:Status https://imagej.net/events/news
+/Category:Techniques https://imagej.net/imaging
+/Category:Tutorials https://imagej.net/tutorials
+/Help https://imagej.net/discuss
+/Help:Contents https://imagej.net/editing
+/List_of_update_sites https://imagej.net/list-of-update-sites
+/Tutorials https://imagej.net/tutorials
+/User:C.TURIÈS https://imagej.net/people/cyrilturies
+/User:Rueden https://imagej.net/people/ctrueden
+/Welcome https://imagej.net/
+/Why https://imagej.net/develop/philosophy
+/awesome https://usage.imagej.net/
+/awesome/ https://usage.imagej.net/
+/awesome/foo https://usage.imagej.net/
+/mediawiki/phase3/Foo https://imagej.net/Foo
+/wiki/Foo https://imagej.net/Foo
+
+# ImageJ1 links
+/ImageJ.jnlp https://imagej.nih.gov/ij/ImageJ.jnlp
+/applet https://imagej.nih.gov/ij/applet
+/applet2 https://imagej.nih.gov/ij/applet2
+/applets.html https://imagej.nih.gov/ij/applets.html
+/developer https://imagej.nih.gov/ij/developer
+/developer/macro/functions.html https://imagej.nih.gov/ij/developer/macro/functions.html
+/disclaimer.html https://imagej.nih.gov/ij/disclaimer.html
+/docs https://imagej.nih.gov/ij/docs
+/download https://imagej.nih.gov/ij/download
+/download.html https://imagej.nih.gov/ij/download.html
+/favicon.ico https://imagej.nih.gov/ij/favicon.ico
+/features.html https://imagej.nih.gov/ij/features.html
+/ij https://imagej.nih.gov/ij
+/ij.jar https://imagej.nih.gov/ij/ij.jar
+/ij/ https://imagej.nih.gov/ij/
+#/images https://imagej.nih.gov/ij/images
+#/index.html https://imagej.nih.gov/ij/index.html
+/ip-demo1 https://imagej.nih.gov/ij/ip-demo1
+/ip-demo2 https://imagej.nih.gov/ij/ip-demo2
+/links.html https://imagej.nih.gov/ij/links.html
+/list-more-info.html https://imagej.nih.gov/ij/list-more-info.html
+/list.html https://imagej.nih.gov/ij/list.html
+/macros https://imagej.nih.gov/ij/macros
+/notes.html https://imagej.nih.gov/ij/notes.html
+#/plugins https://imagej.nih.gov/ij/plugins
+/search.html https://imagej.nih.gov/ij/search.html
+/signed-applet https://imagej.nih.gov/ij/signed-applet
+/source https://imagej.nih.gov/ij/source
+/upgrade https://imagej.nih.gov/ij/upgrade
+/viewer https://imagej.nih.gov/ij/viewer
+
+# Old mailing list archives
+/pipermail/imagej-bugs https://imagej.net/pipermail/imagej-bugs
+/pipermail/imagej-builds https://imagej.net/pipermail/imagej-builds
+/pipermail/imagej-devel https://imagej.net/pipermail/imagej-devel
+
+# Miscellaneous
+/dokuwiki_migration https://imagej.net/editing/dokuwiki-migration
