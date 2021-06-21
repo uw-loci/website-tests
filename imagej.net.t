@@ -37,7 +37,7 @@ Check proxied images from wsr.imagej.net:
 Check primary GitHub Pages content:
 
   $ curl -s https://imagej.net/ | grep '<title>' | xargs
-  <title>ImageJ</title>
+  <title>ImageJ Wiki</title>
 
   $ curl -s https://imagej.net/editing/ | grep '<title>' | xargs
   <title>Editing the Wiki</title>
