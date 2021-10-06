@@ -1,5 +1,7 @@
 #!/bin/sh
 
+debug() { test "$verbose" && echo "$@"; }
+
 file=
 domain=
 verbose=
@@ -20,25 +22,40 @@ test "$domain" || {
 
 test -e "$file" || { echo "No such redirects file: $file"; exit 1; }
 
-test "$verbose" && echo "\nTesting '$file' with domain $domain\n"
+debug "\nTesting '$file' with domain $domain\n"
 
 cat "$file" | while read line
 do
+  # Skip comment line.
   test "$line" = "${line#\#}" -a "$line" || continue
+
   old=${line% *}
   new=${line#* }
-  test "$verbose" && echo "[$old -> $new]"
+  debug "[$old -> $new]"
   url="https://$domain$old"
-  test "$url" = "$new" && { test "$verbose" && echo "[SKIPPED]\n"; continue; }
-  test "$verbose" && echo "$ curl -Is 'https://$domain$old'"
+  if [ "$url" = "$new" ]
+  then
+    # Skip no-op redirect.
+    debug "[SKIPPED]\n"
+    continue
+  fi
+
+  # Do the check.
+  debug "$ curl -Is 'https://$domain$old'"
   response=$(curl -Is "https://$domain$old")
-  test "$verbose" && echo "$response" | sed '/^\s*$/d'
+  debug "$(echo "$response" | tr -d '\r' | sed '/^\s*$/d')"
+
+  # Extract location from response string.
   result=$(echo "$response" | grep '^Location: ' | sed 's/^Location: //' | tr -d '\r')
-  test "$result" || result=$(echo "$response" | grep '^HTTP/' | sed 's/^HTTP\/[0-9\.]* *//' | tr -d '\r')
-  test "$verbose" -a "$result" = "$new" && echo "[SUCCESS]\n"
-  test "$result" = "$new" || {
-    echo "[FAIL] '$old' -> '$result' != '$new'"
-    test "$verbose" && echo || echo "$response"
-  }
+
+  # Report the result.
+  if [ "$result" = "$new" ]
+  then
+    debug "[SUCCESS]\n"
+  else
+    test "$result" &&
+      echo "[FAIL] expected '$old' -> '$new' but was '$result'" ||
+      echo "[FAIL] expected '$old' -> '$new' but got '$(echo "$response" | tr -d '\r' | head -n1)'"
+  fi
 done
 echo DONE
