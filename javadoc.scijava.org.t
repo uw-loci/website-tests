@@ -1,3 +1,6 @@
+NB: Additional tests for javadoc.scijava.org behavior are
+in the repository https://github.com/scijava/javadoc-wrangler.
+
 Check IP address:
 
   $ host javadoc.scijava.org
@@ -12,7 +15,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://javadoc.scijava.org/.hello
-  javadoc.scijava.org on devonrex
+  javadoc.scijava.org on balinese
 
 Check access to proxied content:
 
