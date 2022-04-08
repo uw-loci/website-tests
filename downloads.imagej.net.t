@@ -24,6 +24,7 @@ Check top-level directory index:
   bootstrapJ8.js
   fiji/
   ij-samples.zip
+  incoming/
   java/
   knime/
   openspim/
