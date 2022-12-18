@@ -6,7 +6,7 @@
 /4dtest/4DWP_Test_Data/Bitfile_Data/ https://eliceirilab.org
 /4dtest/4DWP_Test_Data/RGB_Biorad_Data/ https://eliceirilab.org
 /4dtest/4DWP_Test_Data/Tiff_Data/ https://eliceirilab.org
-/SPIE-OSA https://spieosamadison.org
+/SPIE-OSA https://spieopticamadison.org
 /about-loci/current-research-areas https://eliceirilab.org/current-research-areas
 /about-loci/publications https://www.ncbi.nlm.nih.gov/pubmed/?term=eliceiri+K
 /about/people https://eliceirilab.org/researchers
@@ -178,7 +178,7 @@
 /software/wiscscan https://eliceirilab.org/software/wiscscan
 /software/wiscscan-flow-cytometry https://github.com/uw-loci/flow-cytometry
 /software/wiscscan-test-suite https://eliceirilab.org/software/wiscscan
-/spie-osa https://spieosamadison.org
+/spie-osa https://spieopticamadison.org
 /tmp-sr-more-information https://eliceirilab.org
 /ultima-iv-scanhead-filters-and-dichroics https://eliceirilab.org
 /user%20manual https://eliceirilab.org
