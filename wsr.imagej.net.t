@@ -21,10 +21,14 @@ Check top-level directory index:
   2015%20Conference.zip
   2015%20Conference/
   ?C=D;O=A
+  api/
   developer/
   distros/
   docs/
   download/
+  ij/
+  images.mirror.imagej.net/
+  images.wsr.imagej.net/
   images/
   jars/
   macros/

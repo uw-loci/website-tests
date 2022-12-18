@@ -26,13 +26,17 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://imagej.net/.hello
-  imagej.net on devonrex
+  imagej.net on abyssinian
 
-Check proxied images from wsr.imagej.net:
+Check content from wsr.imagej.net:
 
-  $ curl -s https://imagej.net/plugins/ | grep '\(<title>\|og:url\)' | sed 's/^ *//'
-  <title>Plugins</title>
-  <meta content="https://imagej.github.io/plugins/index" property="og:url">
+  $ curl -s https://imagej.net/ij/ | grep -A1 '<title>'
+  <title>ImageJ</title>
+  <link rel="stylesheet" href="docs/ij.css" type="text/css" >
+
+  $ curl -s https://imagej.net/ij/developer/ | grep -A1 '<title>'
+  <title>Developer Resources</title>
+  <link rel="stylesheet" href="../docs/ij.css" type="text/css">
 
 Check primary GitHub Pages content:
 
@@ -45,11 +49,12 @@ Check primary GitHub Pages content:
   $ curl -s https://imagej.net/learn/ | grep '<title>' | xargs
   <title>Introduction</title>
 
-  $ curl -s https://imagej.net/plugins/ | grep '<title>' | xargs
+  $ curl -s https://imagej.net/plugins/ | grep '\(<title>\|og:url\)' | sed 's/^ *//'
   <title>Plugins</title>
+  <meta content="https://imagej.github.io/plugins/index" property="og:url">
 
   $ curl -s https://imagej.net/plugins/visbio | grep '<title>' | xargs
-  <title>VisBio Fiji plugin</title>
+  <title>VisBio Ortho Stack</title>
 
 Check secondary GitHub Pages content:
 
