@@ -35,6 +35,7 @@ Check top-level directory index:
   ~curtis/
   ~gharris/
   ~hinerm/
+  ~tpietzsch/
 
 Check Fiji archive links:
 
@@ -53,15 +54,10 @@ Check Fiji archive links:
   $ "$TESTDIR/try-again.sh" curl -s https://downloads.imagej.net/fiji/latest/ | grep '<a href' | sed 's/.*<a href="\([^"]*\)">.*/\1/' | LC_COLLATE=C sort
   /fiji/
   ?C=D;O=A
-  fiji-linux64.tar.gz
   fiji-linux64.zip
-  fiji-macosx.tar.gz
   fiji-macosx.zip
-  fiji-nojre.tar.gz
   fiji-nojre.zip
-  fiji-win32.tar.gz
   fiji-win32.zip
-  fiji-win64.tar.gz
   fiji-win64.zip
 
   $ "$TESTDIR/try-again.sh" curl -Is https://downloads.imagej.net/fiji/latest/fiji-win64.zip | grep '^\(HTTP\|Content-Type\)'
