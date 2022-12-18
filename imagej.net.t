@@ -5,8 +5,9 @@ Check IP address:
 
   $ host imagej.net | sort
   imagej.net has address 144.92.48.180
-  imagej.net mail is handled by 10 mx1.improvmx.com.
-  imagej.net mail is handled by 20 mx2.improvmx.com.
+  imagej.net mail is handled by 10 mx1.forwardemail.net.
+  imagej.net mail is handled by 10 mx2.forwardemail.net.
+
 
   $ host www.imagej.net
   www.imagej.net has address 144.92.48.180
