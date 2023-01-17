@@ -12,7 +12,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://otegui.molbio.wisc.edu/.hello
-  otegui.molbio.wisc.edu on devonrex
+  otegui.molbio.wisc.edu on himalayan
 
 Check blanket redirect:
 

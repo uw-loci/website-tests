@@ -21,7 +21,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://prototype.wisc.edu/.hello
-  prototype.wisc.edu on devonrex
+  prototype.wisc.edu on himalayan
 
 Check access to proxied content:
 

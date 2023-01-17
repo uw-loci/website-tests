@@ -12,7 +12,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://spie.microscopy.wisc.edu/.hello
-  spie.microscopy.wisc.edu on devonrex
+  spie.microscopy.wisc.edu on himalayan
 
 Check blanket redirect:
 

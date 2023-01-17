@@ -27,7 +27,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://loci.wisc.edu/.hello
-  loci.wisc.edu on devonrex
+  loci.wisc.edu on himalayan
 
 Check site-specific redirects:
 

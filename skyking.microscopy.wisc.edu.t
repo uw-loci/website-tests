@@ -12,7 +12,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://skyking.microscopy.wisc.edu/.hello
-  skyking.microscopy.wisc.edu on devonrex
+  skyking.microscopy.wisc.edu on himalayan
 
 Check loci-logo.png access:
 

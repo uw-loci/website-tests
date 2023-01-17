@@ -12,7 +12,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://dev.loci.wisc.edu/.hello
-  dev.loci.wisc.edu on devonrex
+  dev.loci.wisc.edu on himalayan
 
 Check site-specific redirects:
 

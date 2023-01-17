@@ -12,7 +12,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://microscopy.wisc.edu/.hello
-  microscopy.wisc.edu on devonrex
+  microscopy.wisc.edu on himalayan
 
 Check calendars redirect:
 

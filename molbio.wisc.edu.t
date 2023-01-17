@@ -22,7 +22,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://molbio.wisc.edu/.hello
-  molbio.wisc.edu on devonrex
+  molbio.wisc.edu on himalayan
 
 Check blanket redirect:
 
