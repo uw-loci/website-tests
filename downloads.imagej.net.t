@@ -12,7 +12,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ "$TESTDIR/try-again.sh" curl -s https://downloads.imagej.net/.hello
-  downloads.imagej.net on egyptianmau
+  downloads.imagej.net on devonrex
 
 Check top-level directory index:
 
