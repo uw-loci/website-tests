@@ -12,7 +12,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://dietzc.imagej.net/.hello
-  dietzc.imagej.net on devonrex
+  dietzc.imagej.net on egyptianmau
 
 Check site-specific redirects:
 

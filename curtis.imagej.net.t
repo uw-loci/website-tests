@@ -12,7 +12,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://curtis.imagej.net/.hello
-  curtis.imagej.net on devonrex
+  curtis.imagej.net on egyptianmau
 
 Check blanket redirect:
 

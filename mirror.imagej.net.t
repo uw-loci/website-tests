@@ -12,7 +12,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://mirror.imagej.net/.hello
-  mirror.imagej.net on abyssinian
+  mirror.imagej.net on egyptianmau
 
 Check blanket redirect:
 

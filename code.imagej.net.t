@@ -12,7 +12,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://code.imagej.net/.hello
-  code.imagej.net on devonrex
+  code.imagej.net on egyptianmau
 
 Check plain content:
 
