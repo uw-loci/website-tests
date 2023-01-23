@@ -14,7 +14,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://image.sc/.hello
-  image.sc on devonrex
+  image.sc on egyptianmau
 
 Check blanket redirect:
 
