@@ -20,7 +20,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://fiji.sc/.hello
-  fiji.sc on devonrex
+  fiji.sc on abyssinian
 
 Check front page:
 
