@@ -10,12 +10,12 @@ Check HTTP-to-HTTPS redirect:
   Location: https://update.fiji.sc/.hello
 
   $ curl -s -A Java http://update.fiji.sc/.hello
-  update.fiji.sc on abyssinian
+  update.fiji.sc on balinese
 
 Check hello access:
 
   $ curl -s https://update.fiji.sc/.hello
-  update.fiji.sc on abyssinian
+  update.fiji.sc on balinese
 
 Check top-level directory index:
 

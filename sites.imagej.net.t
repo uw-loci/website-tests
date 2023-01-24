@@ -10,12 +10,12 @@ Check HTTP-to-HTTPS redirect:
   Location: https://sites.imagej.net/.hello
 
   $ curl -s -A Java http://sites.imagej.net/.hello
-  sites.imagej.net on abyssinian
+  sites.imagej.net on balinese
 
 Check hello access:
 
   $ curl -s https://sites.imagej.net/.hello
-  sites.imagej.net on abyssinian
+  sites.imagej.net on balinese
 
 Check top-level directory index:
 
