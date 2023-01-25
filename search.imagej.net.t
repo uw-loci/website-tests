@@ -12,7 +12,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://search.imagej.net/.hello
-  search.imagej.net on cheetoh
+  search.imagej.net on serval
 
 Check front page access:
 

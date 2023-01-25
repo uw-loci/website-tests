@@ -1,7 +1,7 @@
 Check IP address:
 
   $ host mirror.imagej.net
-  mirror.imagej.net has address 144.92.48.184
+  mirror.imagej.net has address 144.92.48.189
 
 Check HTTP-to-HTTPS redirect:
 
