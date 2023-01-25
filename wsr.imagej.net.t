@@ -7,8 +7,8 @@ Check IP address:
 #Check HTTP-to-HTTPS redirect:
 #
 #  $ curl -Is http://wsr.imagej.net/.hello | grep '^\(HTTP\|Location\)'
-#  HTTP/1.1 301 Moved Permanently
-#  Location: https://wsr.imagej.net/.hello
+#  HTTP/1.1 301 Moved Permanently\r (esc)
+#  Location: https://wsr.imagej.net/.hello\r (esc)
 
 Check hello access:
 

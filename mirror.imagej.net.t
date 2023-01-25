@@ -6,8 +6,8 @@ Check IP address:
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://mirror.imagej.net/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://mirror.imagej.net/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://mirror.imagej.net/.hello\r (esc)
 
 Check hello access:
 
@@ -17,5 +17,5 @@ Check hello access:
 Check blanket redirect:
 
   $ curl -Is https://mirror.imagej.net/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.net/ij/
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://imagej.net/ij/\r (esc)

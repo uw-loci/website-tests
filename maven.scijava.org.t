@@ -6,8 +6,8 @@ Check IP address:
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://maven.scijava.org/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://maven.scijava.org/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://maven.scijava.org/.hello\r (esc)
 
 Check hello access:
 

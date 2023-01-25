@@ -6,8 +6,8 @@ Check IP address:
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://samples.scif.io/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://samples.scif.io/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://samples.scif.io/.hello\r (esc)
 
 Check hello access:
 
@@ -17,5 +17,5 @@ Check hello access:
 Check toplevel redirect:
 
   $ curl -Is https://samples.scif.io/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://scif.io/images
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://scif.io/images\r (esc)

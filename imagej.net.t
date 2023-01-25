@@ -15,14 +15,14 @@ Check IP address:
 Check www redirect:
 
   $ curl -Is http://www.imagej.net | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: http://imagej.net/
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: http://imagej.net/\r (esc)
 
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://imagej.net/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.net/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://imagej.net/.hello\r (esc)
 
 Check hello access:
 
@@ -60,14 +60,14 @@ Check primary GitHub Pages content:
 Check secondary GitHub Pages content:
 
   $ curl -Is https://imagej.net/conference | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://conference.imagej.net
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://conference.imagej.net\r (esc)
 
   $ curl -s https://imagej.net/list-of-update-sites/ | grep '<title>' | xargs
   <title>List of update sites - ImageJ</title>
 
   $ curl -s https://imagej.net/mbf/ | grep '<title>' | xargs
-  <title>MBF_ImageJ - Home</title>
+  <title>MBF_ImageJ - Home</title>\r (esc)
 
   $ curl -s https://imagej.net/pipermail/imagej-bugs/ | grep '<title>' | xargs
   <title>The Imagej-bugs Archives</title>
@@ -88,8 +88,8 @@ Check secondary GitHub Pages content:
   <title>Tutorials</title>
 
   $ curl -Is https://imagej.net/workshops | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://workshops.imagej.net
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://workshops.imagej.net\r (esc)
 
 Check site-specific redirects:
 

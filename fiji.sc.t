@@ -2,19 +2,20 @@ Check IP address:
 
   $ host fiji.sc | sort
   fiji.sc has address 144.92.48.190
-  fiji.sc mail is handled by 10 mx.mailtie.com.
+  fiji.sc mail is handled by 10 mx1.improvmx.com.
+  fiji.sc mail is handled by 20 mx2.improvmx.com.
 
 Check www redirect:
 
   $ curl -Is http://www.fiji.sc | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: http://fiji.sc/
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: http://fiji.sc/\r (esc)
 
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://fiji.sc/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://fiji.sc/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://fiji.sc/.hello\r (esc)
 
 Check hello access:
 

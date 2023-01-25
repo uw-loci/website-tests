@@ -6,8 +6,8 @@ Check IP address:
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://aivar.imagej.net/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://aivar.imagej.net/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://aivar.imagej.net/.hello\r (esc)
 
 Check hello access:
 
@@ -17,9 +17,9 @@ Check hello access:
 Check blanket redirect:
 
   $ curl -Is https://aivar.imagej.net/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://downloads.imagej.net/~aivar/
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://downloads.imagej.net/~aivar/\r (esc)
 
   $ curl -Is https://aivar.imagej.net/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://downloads.imagej.net/~aivar/foo
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://downloads.imagej.net/~aivar/foo\r (esc)

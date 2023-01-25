@@ -6,8 +6,8 @@ Check IP address:
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://sites.imagej.net/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://sites.imagej.net/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://sites.imagej.net/.hello\r (esc)
 
   $ curl -s -A Java http://sites.imagej.net/.hello
   sites.imagej.net on balinese

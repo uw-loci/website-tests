@@ -6,8 +6,8 @@ Check IP address:
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://skyking.microscopy.wisc.edu/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://skyking.microscopy.wisc.edu/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://skyking.microscopy.wisc.edu/.hello\r (esc)
 
 Check hello access:
 
@@ -17,9 +17,9 @@ Check hello access:
 Check loci-logo.png access:
 
   $ curl -Is https://skyking.microscopy.wisc.edu/loci-logo.png | grep '^\(HTTP\|Content-\)'
-  HTTP/1.1 200 OK
-  Content-Length: 17540
-  Content-Type: image/png
+  HTTP/1.1 200 OK\r (esc)
+  Content-Length: 17540\r (esc)
+  Content-Type: image/png\r (esc)
 
 Check site-specific redirects:
 

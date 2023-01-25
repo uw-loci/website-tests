@@ -10,14 +10,14 @@ Check IP address:
 Check www redirect:
 
   $ curl -Is http://www.molbio.wisc.edu | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://molbio.wisc.edu/
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://molbio.wisc.edu/\r (esc)
 
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://molbio.wisc.edu/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://molbio.wisc.edu/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://molbio.wisc.edu/.hello\r (esc)
 
 Check hello access:
 
@@ -27,14 +27,14 @@ Check hello access:
 Check blanket redirect:
 
   $ curl -Is https://molbio.wisc.edu/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://cellimaging.wisc.edu
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://cellimaging.wisc.edu\r (esc)
 
   $ curl -Is https://molbio.wisc.edu/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://cellimaging.wisc.edu
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://cellimaging.wisc.edu\r (esc)
 
   $ curl -Is https://molbio.wisc.edu/job/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://cellimaging.wisc.edu
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://cellimaging.wisc.edu\r (esc)
 

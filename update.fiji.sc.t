@@ -6,8 +6,8 @@ Check IP address:
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://update.fiji.sc/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://update.fiji.sc/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://update.fiji.sc/.hello\r (esc)
 
   $ curl -s -A Java http://update.fiji.sc/.hello
   update.fiji.sc on balinese

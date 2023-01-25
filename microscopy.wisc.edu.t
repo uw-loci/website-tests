@@ -6,8 +6,8 @@ Check IP address:
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://microscopy.wisc.edu/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://microscopy.wisc.edu/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://microscopy.wisc.edu/.hello\r (esc)
 
 Check hello access:
 
@@ -17,15 +17,15 @@ Check hello access:
 Check calendars redirect:
 
   $ curl -Is https://microscopy.wisc.edu/cgi-bin/calendar/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://calendars.loci.wisc.edu/
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://calendars.loci.wisc.edu/\r (esc)
 
 Check blanket redirect:
 
   $ curl -Is https://microscopy.wisc.edu/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://resources.research.wisc.edu/
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://resources.research.wisc.edu/\r (esc)
 
   $ curl -Is https://microscopy.wisc.edu/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://resources.research.wisc.edu/
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://resources.research.wisc.edu/\r (esc)

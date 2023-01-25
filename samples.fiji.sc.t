@@ -6,8 +6,8 @@ Check IP address:
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://samples.fiji.sc/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://samples.fiji.sc/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://samples.fiji.sc/.hello\r (esc)
 
 Check hello access:
 

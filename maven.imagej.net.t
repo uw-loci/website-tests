@@ -6,8 +6,8 @@ Check IP address:
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://maven.imagej.net/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://maven.imagej.net/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://maven.imagej.net/.hello\r (esc)
 
 Check hello access:
 
@@ -17,12 +17,12 @@ Check hello access:
 Check blanket redirect:
 
   $ curl -Is https://maven.imagej.net/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://maven.scijava.org/
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://maven.scijava.org/\r (esc)
 
   $ curl -Is https://maven.imagej.net/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://maven.scijava.org/foo
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://maven.scijava.org/foo\r (esc)
 
 Check Ivy User-Agent (for Micro-Manager builds):
 
@@ -30,12 +30,12 @@ Check Ivy User-Agent (for Micro-Manager builds):
   <title>Nexus Repository Manager</title>
 
   $ curl -Is -A Ivy http://maven.imagej.net/nexus/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: http://maven.imagej.net/foo
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: http://maven.imagej.net/foo\r (esc)
 
   $ curl -s -A Ivy https://maven.imagej.net/ | grep '<title>' | xargs
   <title>Nexus Repository Manager</title>
 
   $ curl -Is -A Ivy https://maven.imagej.net/nexus/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://maven.imagej.net/foo
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://maven.imagej.net/foo\r (esc)

@@ -9,8 +9,8 @@ Check IP address:
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://javadoc.scijava.org/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://javadoc.scijava.org/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://javadoc.scijava.org/.hello\r (esc)
 
 Check hello access:
 
@@ -44,4 +44,4 @@ Check access to proxied content:
   <title>Overview (Java SE 14 &amp; JDK 14)</title>
 
   $ curl -s https://javadoc.scijava.org/JavaFX8/ | grep '<title>'
-  <title>JavaFX 8</title>
+  <title>JavaFX 8</title>\r (esc)

@@ -6,8 +6,8 @@ Check IP address:
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://knime.imagej.net/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://knime.imagej.net/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://knime.imagej.net/.hello\r (esc)
 
 Check hello access:
 
@@ -17,9 +17,9 @@ Check hello access:
 Check blanket redirect:
 
   $ curl -Is https://knime.imagej.net/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.net/KNIME
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://imagej.net/KNIME\r (esc)
 
   $ curl -Is https://knime.imagej.net/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.net/KNIME
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://imagej.net/KNIME\r (esc)

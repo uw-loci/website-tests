@@ -6,8 +6,8 @@ Check IP address:
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://otegui.molbio.wisc.edu/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://otegui.molbio.wisc.edu/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://otegui.molbio.wisc.edu/.hello\r (esc)
 
 Check hello access:
 
@@ -17,9 +17,9 @@ Check hello access:
 Check blanket redirect:
 
   $ curl -Is https://otegui.molbio.wisc.edu/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://otegui.cellimaging.wisc.edu/
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://otegui.cellimaging.wisc.edu/\r (esc)
 
   $ curl -Is https://otegui.molbio.wisc.edu/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://otegui.cellimaging.wisc.edu/
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://otegui.cellimaging.wisc.edu/\r (esc)

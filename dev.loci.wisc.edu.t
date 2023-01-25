@@ -6,8 +6,8 @@ Check IP address:
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://dev.loci.wisc.edu/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://dev.loci.wisc.edu/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://dev.loci.wisc.edu/.hello\r (esc)
 
 Check hello access:
 

@@ -9,14 +9,14 @@ Check IP address:
 Check www redirect:
 
   $ curl -Is http://www.prototype.wisc.edu | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: http://prototype.wisc.edu/
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: http://prototype.wisc.edu/\r (esc)
 
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://prototype.wisc.edu/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://prototype.wisc.edu/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://prototype.wisc.edu/.hello\r (esc)
 
 Check hello access:
 

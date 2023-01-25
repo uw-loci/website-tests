@@ -6,8 +6,8 @@ Check IP address:
 Check HTTP-to-HTTPS redirect:
 
   $ curl -Is http://trac.imagej.net/.hello | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://trac.imagej.net/.hello
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://trac.imagej.net/.hello\r (esc)
 
 Check hello access:
 
@@ -17,13 +17,13 @@ Check hello access:
 Check redirects:
 
   $ curl -Is https://trac.imagej.net/ | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.net/tickets/
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://imagej.net/tickets/\r (esc)
 
   $ curl -Is https://trac.imagej.net/ticket/1234 | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.net/tickets/1234
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://imagej.net/tickets/1234\r (esc)
 
   $ curl -Is https://trac.imagej.net/foo | grep '^\(HTTP\|Location\)'
-  HTTP/1.1 301 Moved Permanently
-  Location: https://imagej.net/tickets/
+  HTTP/1.1 301 Moved Permanently\r (esc)
+  Location: https://imagej.net/tickets/\r (esc)
