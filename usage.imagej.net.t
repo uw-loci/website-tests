@@ -1,7 +1,7 @@
 Check IP address:
 
   $ host usage.imagej.net
-  usage.imagej.net has address 144.92.48.185
+  usage.imagej.net has address 144.92.48.189
 
 Check HTTP-to-HTTPS redirect:
 
@@ -12,7 +12,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://usage.imagej.net/.hello
-  usage.imagej.net on cheetoh
+  usage.imagej.net on egyptianmau
 
 Check front page:
 

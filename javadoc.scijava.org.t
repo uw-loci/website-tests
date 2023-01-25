@@ -4,7 +4,7 @@ in the repository https://github.com/scijava/javadoc-wrangler.
 Check IP address:
 
   $ host javadoc.scijava.org
-  javadoc.scijava.org has address 144.92.48.198
+  javadoc.scijava.org has address 144.92.48.197
 
 Check HTTP-to-HTTPS redirect:
 
@@ -15,7 +15,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://javadoc.scijava.org/.hello
-  javadoc.scijava.org on balinese
+  javadoc.scijava.org on javanese
 
 Check access to proxied content:
 
