@@ -19,6 +19,7 @@ Check top-level directory index:
   $ "$TESTDIR/try-again.sh" curl -s https://downloads.imagej.net/ | grep '<a href' | sed 's/.*<a href="\([^"]*\)">.*/\1/' | LC_COLLATE=C sort
   3dviewer/
   ?C=D;O=A
+  ISBI-2012-challenge.zip
   ImageJ2-20160205.zip
   MBF-ImageJ-20090120.zip
   bootstrapJ8.js
