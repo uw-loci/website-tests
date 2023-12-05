@@ -1,7 +1,7 @@
 Check IP address:
 
   $ host maven.imagej.net
-  maven.imagej.net has address 144.92.48.199
+  maven.imagej.net has address 144.92.48.196
 
 Check HTTP-to-HTTPS redirect:
 
@@ -12,7 +12,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://maven.imagej.net/.hello
-  maven.imagej.net on balinese
+  maven.imagej.net on mainecoon
 
 Check blanket redirect:
 

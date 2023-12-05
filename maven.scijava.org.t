@@ -1,7 +1,7 @@
 Check IP address:
 
   $ host maven.scijava.org
-  maven.scijava.org has address 144.92.48.199
+  maven.scijava.org has address 144.92.48.196
 
 Check HTTP-to-HTTPS redirect:
 
@@ -12,7 +12,7 @@ Check HTTP-to-HTTPS redirect:
 Check hello access:
 
   $ curl -s https://maven.scijava.org/.hello
-  maven.scijava.org on balinese
+  maven.scijava.org on mainecoon
 
 Check front page access:
 
