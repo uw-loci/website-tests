@@ -22,19 +22,22 @@ Check top-level directory index:
   2015%20Conference/
   ?C=D;O=A
   api/
+  backup/
   developer/
   distros/
   docs/
   download/
+  icons/
   ij/
-  images.mirror.imagej.net/
-  images.wsr.imagej.net/
   images/
   jars/
   macros/
+  nih-image/
   notes.html
   plugins/
+  rsb/
   source/
   src/
+  style.css
   temp/
   upgrade/

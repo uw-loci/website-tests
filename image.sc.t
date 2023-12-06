@@ -2,8 +2,7 @@ Check IP address:
 
   $ host image.sc | sort
   image.sc has address 144.92.48.194
-  image.sc mail is handled by 10 mx1.forwardemail.net.
-  image.sc mail is handled by 10 mx2.forwardemail.net.
+  image.sc mail is handled by 10 mx.mailtie.com.
 
 Check HTTP-to-HTTPS redirect:
 

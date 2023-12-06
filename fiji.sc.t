@@ -2,8 +2,7 @@ Check IP address:
 
   $ host fiji.sc | sort
   fiji.sc has address 144.92.48.190
-  fiji.sc mail is handled by 10 mx1.forwardemail.net.
-  fiji.sc mail is handled by 10 mx2.forwardemail.net.
+  fiji.sc mail is handled by 10 mx.mailtie.com.
 
 Check www redirect:
 

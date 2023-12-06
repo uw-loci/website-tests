@@ -19,7 +19,7 @@
 /mediawiki/phase3/Foo https://imagej.net/Foo
 /wiki/Foo https://imagej.net/Foo
 
-# ImageJ1 links
+# ImageJ website links
 /ImageJ.jnlp https://imagej.net/ij/ImageJ.jnlp
 /applet https://imagej.net/ij/applet
 /applet2 https://imagej.net/ij/applet2
@@ -30,7 +30,6 @@
 /docs https://imagej.net/ij/docs
 /download https://imagej.net/ij/download
 /download.html https://imagej.net/ij/download.html
-/favicon.ico https://imagej.net/ij/favicon.ico
 /features.html https://imagej.net/ij/features.html
 /ij https://imagej.net/ij
 /ij.jar https://imagej.net/ij/ij.jar
