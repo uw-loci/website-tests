@@ -5,5 +5,5 @@ do
   echo
   echo "[$t]"
   prysk "$t"
-  sleep 1
+  sleep 0.5
 done
